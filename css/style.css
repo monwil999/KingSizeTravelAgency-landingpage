@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/travel.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  max-width: 700px; 
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  border: 2px;
+  width: 90%;  
+  max-width: 350px; 
+  text-align: center;
+  padding: 15px;  
+  margin: auto; 
+}
+
+legend.form__legend {
+  font-weight: bold;
+  font-size: 1.2em; 
+  margin: 20px 0 10px 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+input:focus,
+select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.form__button {
+  text-align: center;
+  border: none;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: hsl(348, 83%, 67%);
+}
+
+.form__button:active {
+  background-color: hsl(348, 83%, 27%);
+}
+
+.js-result {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+}

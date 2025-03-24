@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Our Community</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="js-form form">
+        <fieldset>
+          <legend class="form__legend">
+            Discover Our Exclusive Travel Offers from KingSize Travel Agency
+          </legend>
+          <p>
+            <label for="first_name"
+              ><span class="form__labelText">First Name</span></label
+            >
+            <input
+              type="text"
+              class="form_field"
+              name="first_name"
+              id="first_name"
+              required
+              pattern="[A-Za-z]+"
+              title="First name should only contain letters"
+            />
+          </p>
+          <p>
+            <label for="last_name"
+              ><span class="form__labelText">Last Name</span></label
+            >
+            <input
+              type="text"
+              class="form_field"
+              name="last_name"
+              id="last_name"
+              required
+              pattern="[A-Za-z]+"
+              title="Last name should only contain letters"
+            />
+          </p>
+          <p>
+            <label for="email"
+              ><span class="form__labelText">Email</span></label
+            >
+            <input
+              type="email"
+              class="form_field"
+              name="email"
+              id="email"
+              required
+            />
+          </p>
+          <p>
+            <label for="phone"
+              ><span class="form__labelText">Phone Number</span></label
+            >
+            <input
+              type="tel"
+              class="form_field"
+              name="phone"
+              id="phone"
+              required
+              pattern="^\+48\d{9}$"
+              placeholder="+48XXXXXXXXX"
+              minlength="12"
+              maxlength="12"
+            />
+          </p>
+          <p>
+            <label for="destination_interest"
+              ><span class="form__labelText">Destination Interest</span></label
+            >
+            <select
+              class="form_field"
+              name="destination_interest"
+              id="destination_interest"
+              required
+            >
+              <option value="" disabled selected>Choose</option>
+              <option value="Europe">Europe</option>
+              <option value="Africa">Africa</option>
+              <option value="Northern America">Northern America</option>
+              <option value="Southern America">Southern America</option>
+              <option value="Australia">Australia</option>
+              <option value="Oceania">Oceania</option>
+              <option value="Asia">Asia</option>
+            </select>
+          </p>
+          <p id="region-container" style="display: none">
+            <label for="region"
+              ><span class="form__labelText">Region</span></label
+            >
+            <select class="form_field" name="region" id="region">
+              <option value="Southern Europe">Southern Europe</option>
+              <option value="Northern Europe">Northern Europe</option>
+              <option value="Western Europe">Western Europe</option>
+              <option value="Eastern Europe">Eastern Europe</option>
+            </select>
+          </p>
+          <p>
+            <button class="form__button" type="submit">Submit</button>
+          </p>
+          <p class="js-result form__result" style="display: none">
+            Thank you for submitting your interest in our offer!
+          </p>
+        </fieldset>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
